@@ -20,7 +20,7 @@ val spark = SparkSession.builder().getOrCreate()
 
 // Use Spark to read in the Ecommerce Customers csv file.
 // val is immutable
-val data = spark.read.option("header","true").option("inferSchema","true").format("csv").load("Ecommerce Customers")
+val data = spark.read.option("header","true").option("inferSchema","true").format("csv").load("Clean-Ecommerce.csv")
 
 // Print the Schema of the DataFrame
 data.printSchema()
