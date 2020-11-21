@@ -16,6 +16,7 @@ def main(): Unit = {
   val lr = new LinearRegression().setMaxIter(100).setRegParam(0.3).setElasticNetParam(0.8)
 
   // Fit the model
+  // val is immutable
   val lrModel = lr.fit(training)
 
   // Print the coefficients and intercept for linear regression
